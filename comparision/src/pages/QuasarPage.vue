@@ -28,7 +28,7 @@
               dense
               outlined
               :placeholder="'Filter ' + col.label"
-              style="max-width: 120px;"
+              style="max-width: 200px;"
             />
           </q-th>
         </q-tr>
