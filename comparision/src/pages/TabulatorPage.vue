@@ -18,9 +18,9 @@ onMounted(() => {
     data: rows.value,
     layout: "fitColumns",
     columns: [
-      { title: "Name", field: "first_name", width: 200 },
-      { title: "Last name", field: "last_name", hozAlign: "left" },
-      { title: "Favourite Color", field: "email" }
+      { title: "Name", field: "first_name", width: 200, headerFilter: "input" },
+      { title: "Last name", field: "last_name", hozAlign: "left", headerFilter: "input" },
+      { title: "Favourite Color", field: "email", headerFilter: "input" }
     ],
   })
 
