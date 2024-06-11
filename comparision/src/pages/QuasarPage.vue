@@ -26,7 +26,7 @@
               v-model="filters[col.name]"
               debounce="300"
               dense
-              outlined
+              
               :placeholder="'Filter ' + col.label"
               style="max-width: 200px;"
             />
