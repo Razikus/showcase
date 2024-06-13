@@ -80,7 +80,7 @@
           </AColumn>
           <AColumn header="Status" field="status" :filterMenuStyle="{ width: '14rem' }" style="min-width: 12rem">
               <template #body="{ data }">
-                  <Tag :value="data.status" :severity="getSeverity(data.status)" />
+                  <ATag :value="data.status" :severity="getSeverity(data.status)" />
               </template>
               <template #filter="{ filterModel }">
                   <ASelect v-model="filterModel.value" :options="statuses" placeholder="Select One" showClear>
@@ -138,7 +138,8 @@ const statuses = ref(['unqualified', 'qualified', 'new', 'negotiation', 'renewal
 const loading = ref(true);
 
 onMounted(() => {
-  CustomerService.getCustomersMedium().then((data) => {
+  CustomerService.getCustomersXLarge().then((data) => {
+    console.log(data)
       customers.value = getCustomers(data);
       loading.value = false;
   });
