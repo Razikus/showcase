@@ -65,6 +65,28 @@
         <q-item
           clickable
           v-ripple
+          to="/grid3">
+          <q-item-section>
+            <q-item-label>
+              AG Grid3
+            </q-item-label>
+          </q-item-section>
+        
+        </q-item>
+        <q-item
+          clickable
+          v-ripple
+          to="/prime">
+          <q-item-section>
+            <q-item-label>
+              PrimeVue
+            </q-item-label>
+          </q-item-section>
+        
+        </q-item>
+        <q-item
+          clickable
+          v-ripple
           to="/tabulator">
           <q-item-section>
             <q-item-label>

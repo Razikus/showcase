@@ -7,7 +7,9 @@ const routes = [
       { path: 'quasar', component: () => import('pages/QuasarPage.vue') },
       { path: 'tabulator', component: () => import('pages/TabulatorPage.vue') },
       { path: 'grid', component: () => import('pages/AGPage.vue') },
-      { path: 'grid2', component: () => import('pages/AGPage2.vue') }
+      { path: 'grid2', component: () => import('pages/AGPage2.vue') },
+      { path: 'grid3', component: () => import('pages/AGPage3.vue') },
+      { path: 'prime', component: () => import('pages/PrimeVuePage.vue') }
     ]
   },
 
